@@ -3,17 +3,16 @@
 # Checkpoint 4: Criação e estilização do componente "Header"
 <details>
     <summary>Especificações:</summary>
-        - Data de Entrega: 19/09
-        - Descrição: Começaremos com a parte mais visualmente dominante de uma página: o Header.
-        - Especificações: Componente Principal:"Header"
-        - Localização: Salve dentro da estrutura componente/header. Nome do arquivo: Header.js.
-        - Inclua:
-        - Um título ou logotipo (pode ser fictício).
-        - Um menu de navegação com os itens: "Home", "Sobre", "Contato", "Blog" e "FAQ".
-        - Estilize o "Header" usando styled-components. Dê ênfase à cor, tipo de letra e
-        espaçamento.
-        - O projeto como um todo deve ter um max-width de 1200px.
-        - Imagens: Se usar algum logotipo ou imagem, salve-os em imagens.
+        * Data de Entrega: 19/09
+        * Descrição: Começaremos com a parte mais visualmente dominante de uma página: o Header.
+        * Especificações: Componente Principal:"Header"
+        * Localização: Salve dentro da estrutura componente/header. Nome do arquivo: Header.js.
+        * Inclua:
+        * Um título ou logotipo (pode ser fictício).
+        * Um menu de navegação com os itens: "Home", "Sobre", "Contato", "Blog" e "FAQ".
+        * Estilize o "Header" usando styled-components. Dê ênfase à cor, tipo de letra e espaçamento.
+        * O projeto como um todo deve ter um max-width de 1200px.
+        * Imagens: Se usar algum logotipo ou imagem, salve-os em imagens.
 </details>
 
 # Checkpoint 5: Criação e estilização do componente "Aside"

@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
-import { FaRecycle } from "react-icons/fa";
+import { AiOutlineCoffee } from "react-icons/ai";
 import { FaBars, FaTimes } from "react-icons/fa";
 import styled from "styled-components";
 
 const NavbarContainer = styled.nav`
-  background: #263243;
+  max-width: 1200px;
+  background: #452c15;
   height: 85px;
   display: flex;
   justify-content: center;
@@ -22,45 +23,44 @@ const NavbarContent = styled.div`
   height: 0px;
   z-index: 1;
   width: 100%;
-  max-width: 1300px;
+  max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 30px;
   padding-left: 30px;
 `
 const NavbarLogo = styled(Link)`
-  color: #17cf97;
+  color: #f2d7b1;
   justify-self: start;
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
   display: flex;
   align-items: center;
-
-  @media screen and (max-width: 960px) {
-    font-size: 1.5rem;
-    }
 `;
 
-const NavbarIcon = styled(FaRecycle)`
-  margin-right: 0.2rem;
-  color: #17cf97;
+const NavbarIcon = styled(AiOutlineCoffee)`
+  color: #f2d7b1;
+  margin-left: 5px;
+  margin-bottom: 2px;
 `;
 
 const MenuIcon = styled.div`
   display: none;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 850px) {
     display: block;
     position: absolute;
     top: 0;
     right: 0;
+    margin-top: 5px;
     transform: translate(-100%, 60%);
-    font-size: 1.8rem;
+    font-size: 2.0rem;
     cursor: pointer;
     }
 `;
 
+// Este é o menu mobile
 const NavMenu = styled.ul`
   display: flex;
   align-items: center;
@@ -71,7 +71,7 @@ const NavMenu = styled.ul`
     transform: translateY(0);
   }
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 850px) {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -82,7 +82,7 @@ const NavMenu = styled.ul`
     transition: all 0.5s ease;
 
     &.active {
-    background: #263243;
+    background: #523418;
     right: 0;
     opacity: 0.9;
     transition: all 0.6s ease;
@@ -95,7 +95,7 @@ const NavItem = styled.li`
   height: 85px;
   border-bottom: 2px solid transparent;
   &:hover {
-    border-bottom: 3px solid #17cf97;
+    border-bottom: 3px solid #f2d7b1;
   }
 
   @media screen and (max-width: 960px) {
@@ -114,11 +114,11 @@ const NavLinks = styled(NavLink)`
   padding: 0.5rem 1rem;
   height: 100%;
   &:hover {
-    color: #17cf97;
+    color: #f2d7b1;
     transition: all 0.3s ease;
   }
   &.active {
-    color: #17cf97;
+    color: #f2d7b1;
   }
 
 `;
@@ -134,8 +134,8 @@ function Navbar() {
         <NavbarContent>
 
           <NavbarLogo to="/" onClick={closeMobileMenu}>
+            The Coffee Project
             <NavbarIcon />
-            TheGreenProject
           </NavbarLogo>
 
           <MenuIcon onClick={handleClick}>
