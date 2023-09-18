@@ -8,3 +8,18 @@
   font-family: 'Roboto', sans-serif;
   max-width: 1200px;
 }
+
+.BlogPage,
+.ContatoPage,
+.ErrorPage,
+.FaqPage,
+.HomePage,
+.SobrePage {
+  max-width: 1200px;
+  display: flex;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #fefefe;
+  font-size: 1.5rem;
+}
