@@ -53,7 +53,7 @@ const MenuIcon = styled.div`
     position: absolute;
     top: 0;
     right: 0;
-    margin-top: 5px;
+    margin-top: 2px;
     transform: translate(-100%, 60%);
     font-size: 2.0rem;
     cursor: pointer;
@@ -76,13 +76,13 @@ const NavMenu = styled.ul`
     flex-direction: column;
     width: 100%;
     position: absolute;
-    top: 80px;
+    top: 85px;
     right: -100%;
     opacity: 1;
     transition: all 0.5s ease;
 
     &.active {
-    background: #523418;
+    background: #3b2611;
     right: 0;
     opacity: 0.9;
     transition: all 0.6s ease;
@@ -139,7 +139,7 @@ function Navbar() {
           </NavbarLogo>
 
           <MenuIcon onClick={handleClick}>
-            {click ? <FaTimes color="white" /> : <FaBars color="white" />}
+            {click ? <FaTimes color="#f2d7b1" /> : <FaBars color="#f2d7b1" />}
           </MenuIcon>
 
           <NavMenu className={click ? "nav-menu active" : "nav-menu"}>
