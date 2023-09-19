@@ -13,8 +13,12 @@ const NavbarContainer = styled.nav`
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto;
   z-index: 999;
 `
 const NavbarContent = styled.div`
@@ -134,7 +138,7 @@ function Navbar() {
         <NavbarContent>
 
           <NavbarLogo to="/" onClick={closeMobileMenu}>
-            The Coffee Project
+            Coffee Corner
             <NavbarIcon />
           </NavbarLogo>
 
