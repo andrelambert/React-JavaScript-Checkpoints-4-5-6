@@ -1,5 +1,7 @@
 # Web Development with JavaScript | Checkpoints 4, 5 e 6
 
+## André Lambert - RM99148 - 1ESPW
+
 # Checkpoint 4: Criação e estilização do componente "Header"
 <details>
     <summary>Especificações:</summary>
@@ -33,7 +35,6 @@
              Uma foto de perfil (pode ser qualquer imagem representativa).
              Links para perfis de mídias sociais (Facebook, Twitter, LinkedIn, Instagram).
              Uma lista de habilidades ou interesses. </li>
-             
         <li> Estilize o "Aside" usando styled-components. Pense em uma paleta de cores
         harmoniosa e mantenha a consistência com o "Header". </li>
         <li> O "Aside" deve ter um width de 300px e height de 800px. </li>
