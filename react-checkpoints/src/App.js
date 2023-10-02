@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 
 // Importando Componentes
 import Navbar from './components/Navbar/Navbar';
+import Sidebar from './components/Sidebar/Sidebar';
 
 // Importando Páginas
 import ErrorPage from './routes/ErrorPage';
@@ -19,6 +20,7 @@ const App = () => {
   return (
       <>
       <Navbar />
+      <Sidebar />
       <Routes>
         <Route path="*" element={<ErrorPage />} />
         <Route path="/" element={<HomePage />} />

@@ -8,6 +8,7 @@ import styled from "styled-components";
 const NavbarContainer = styled.nav`
   max-width: 1200px;
   background: #452c15;
+  border-radius: 15px;
   height: 85px;
   display: flex;
   justify-content: center;
